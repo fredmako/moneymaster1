@@ -449,7 +449,7 @@ h6 {
   padding: 30px 20px;
   transition: ease-in-out 0.3s;
   border: 1px solid rgba(18, 220, 48, 0.3);
-  height: 100%; /* Adjust height if needed */
+  height: fit-content; /* Adjust height if needed */
   text-align: center;
   background-color: none; /* Add background color */
   display: flex; /* Make icon box a flex container */
@@ -481,43 +481,40 @@ h6 {
   vertical-align: middle;
 }
 
-.uniform-aspect-ratio {
-  /* Existing styles (if any) */
-  position: relative; /* Required for aspect ratio technique */
-  width: 100%; /* Adjust width if needed */
-}
 
-.uniform-aspect-ratio img {
-  position: absolute; /* Required for aspect ratio technique */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Optional: Scales image to fill container while maintaining aspect ratio */
-}
+
+
 .uniform-aspect-ratio a {
   display: flex;
-  color: #000;
+  color: #1368de;
   text-decoration: none;
   position: absolute;
   z-index: 2;
 }
 #hero .icon-box {
+  display: flex;
+  max-width: fit-content;
   padding: 30px 20px;
   transition: ease-in-out 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid goldenrod;
   height: 100%; /* Adjust height if needed */
   text-align: center;
-  background-color: #fff;
+  position: relative; /* Required for aspect ratio technique */
+  width: 120%; 
 }
 
 #hero .icon-box img {
   /* Target the image element */
   max-width: 100%; /* Scale image to fit container width */
-  height: auto; /* Maintain aspect ratio */
+   /* Maintain aspect ratio */
   display: flex; /* Ensure image behaves like a block element */
   margin: 0 auto; /* Center the image horizontally */
-  vertical-align: middle;
+  position: absolute; /* Required for aspect ratio technique */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #hero .icon-box h3 {
@@ -530,7 +527,7 @@ h6 {
 }
 
 #hero .icon-box h3 a {
-  color: #fff;
+  color:black;
   transition: ease-in-out 0.3s;
 }
 
