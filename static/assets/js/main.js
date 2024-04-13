@@ -6,29 +6,6 @@
  * License: https://bootstrapmade.com/license/
  */
 
-const nextBtn = document.getElementById("next-btn");
-const registerBtn = document.getElementById("register-btn");
-const form = document.getElementById("signup-form");
-
-let currentStep = 1;
-let allStepsCompleted = false; // Flag to track completion
-
-nextBtn.addEventListener("click", () => {
-  // Existing code to handle step switching and progress bar update
-
-  // Check if all steps are completed (modify based on your number of steps)
-  allStepsCompleted = currentStep === 2; // Assuming 2 steps
-
-  // Disable submit button if not all steps are completed
-  registerBtn.disabled = !allStepsCompleted;
-});
-
-form.addEventListener("submit", (event) => {
-  if (!allStepsCompleted) {
-    event.preventDefault(); // Prevent submission if not all steps are complete
-    alert("Please complete all steps before registering.");
-  }
-});
 
 (function () {
   "use strict";

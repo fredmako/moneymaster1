@@ -445,13 +445,13 @@ h6 {
   margin: 10px 0 0 0;
   font-size: 24px;
 }
-#hero .icon-box {
+#hero .icon-box{
   padding: 30px 20px;
   transition: ease-in-out 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(18, 220, 48, 0.3);
   height: 100%; /* Adjust height if needed */
   text-align: center;
-  background-color: #fff; /* Add background color */
+  background-color: none; /* Add background color */
   display: flex; /* Make icon box a flex container */
   flex-direction: column; /* Arrange elements vertically */
   justify-content: space-between; /* Align content at bottom */
